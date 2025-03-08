@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function parseMarkdown() {
     // This is the content from the Markdown file
-    const markdownContent = `# Work requests
+    const markdownContent = `# Work Requests
 
 ## "No"
 
@@ -26,19 +26,6 @@ function parseMarkdown() {
 * "That's a creative suggestion, though it's not something we can implement at this time."
 * "I've given this considerable thought, and my answer is no."
 
-## "Not now"
-
-* "This isn't a priority for us this quarter, but let's revisit it in our planning for next quarter."
-* "The timing isn't right at the moment. Can we schedule this for discussion in [specific timeframe]?"
-* "I'd like to hold off on this until we've completed our current projects."
-* "Let's table this discussion and come back to it once we've addressed our more pressing deadlines."
-* "I'm keen to explore this further, but we need to focus on other priorities at present."
-* "I suggest we park this idea temporarily and return to it when resources become available."
-* "This isn't feasible with our current workload, but I'm open to considering it down the track."
-* "We'll need to defer this until the new financial year when we reassess our budget allocation."
-* "Let's put a pin in this for now while we gather more information."
-* "I'd prefer to wait until we have more data before making a commitment."
-
 ## "I'm delegating this"
 
 * "This is something that would benefit from [colleague's] expertise. I'll connect you with them."
@@ -52,20 +39,20 @@ function parseMarkdown() {
 * "I'd like to hand this over to [colleague] who has more capacity to give it proper attention."
 * "I'll ask [team member] to follow up with you as they're leading our initiatives in this space."
 
-## "Setting Boundaries"
+## "Not now"
 
-* "I need to protect our team's bandwidth, so we'll need to decline this request."
-* "Taking this on would overextend our resources, which wouldn't be responsible management."
-* "I'm mindful of our team's workload, and we simply don't have capacity for additional projects."
-* "To maintain our focus on critical priorities, I need to say no to this request."
-* "I'm responsible for ensuring our team doesn't become overcommitted, so we'll have to pass on this."
-* "While I'd like to help, adding this to our plate would compromise our existing commitments."
-* "My responsibility is to ensure our team's wellbeing, which means we can't take on anything more right now."
-* "I'm protective of our team's time, and this would pull us away from our core objectives."
-* "I'm conscious of not spreading our resources too thin, so we'll need to decline."
-* "To maintain the quality of our work, I need to be selective about what we commit to."
+* "This isn't a priority for us this quarter, but let's revisit it in our planning for next quarter."
+* "The timing isn't right at the moment. Can we schedule this for discussion in [specific timeframe]?"
+* "I'd like to hold off on this until we've completed our current projects."
+* "Let's table this discussion and come back to it once we've addressed our more pressing deadlines."
+* "I'm keen to explore this further, but we need to focus on other priorities at present."
+* "I suggest we park this idea temporarily and return to it when resources become available."
+* "This isn't feasible with our current workload, but I'm open to considering it down the track."
+* "We'll need to defer this until the new financial year when we reassess our budget allocation."
+* "Let's put a pin in this for now while we gather more information."
+* "I'd prefer to wait until we have more data before making a commitment."
 
-## Alternatives
+## "I'll help another way"
 
 * "What if we approached this from a different angle? Perhaps we could [alternative suggestion]."
 * "I can't approve this specific request, but here's what I can offer instead..."
@@ -78,6 +65,19 @@ function parseMarkdown() {
 * "Let's try a different tack – perhaps [alternative] would be more achievable."
 * "I see where you're heading with this. What if we modified the approach to [alternative]?"
 
+## Setting Boundaries
+
+* "I need to protect our team's bandwidth, so we'll need to decline this request."
+* "Taking this on would overextend our resources, which wouldn't be responsible management."
+* "I'm mindful of our team's workload, and we simply don't have capacity for additional projects."
+* "To maintain our focus on critical priorities, I need to say no to this request."
+* "I'm responsible for ensuring our team doesn't become overcommitted, so we'll have to pass on this."
+* "While I'd like to help, adding this to our plate would compromise our existing commitments."
+* "My responsibility is to ensure our team's wellbeing, which means we can't take on anything more right now."
+* "I'm protective of our team's time, and this would pull us away from our core objectives."
+* "I'm conscious of not spreading our resources too thin, so we'll need to decline."
+* "To maintain the quality of our work, I need to be selective about what we commit to."
+
 # Meeting Requests
 
 ## "No"
@@ -88,14 +88,6 @@ function parseMarkdown() {
 * "I don't think I'd add value to this particular conversation."
 * "I've checked my calendar against my quarterly objectives, and I need to protect my time for deliverables I've committed to."
 
-## "I'm no longer going to attend"
-
-* "I've noticed I haven't been able to contribute meaningfully to this recurring meeting. I'll step back unless specific topics arise that require my input."
-* "Could we revisit the necessity of my attendance at this standing meeting? My involvement doesn't seem essential based on recent agendas."
-* "I suggest rotating attendance from our team rather than having me join every session."
-* "Could we reduce the frequency of this meeting? Monthly would be more manageable than weekly for me."
-* "I'd like to propose moving to an exception-based model for my attendance - I'll join when there are agenda items requiring my specific input."
-
 ## "I'm delegating this"
 
 * "My team member [name] would be better positioned to contribute to this discussion."
@@ -104,13 +96,13 @@ function parseMarkdown() {
 * "As this intersects with [colleague]'s responsibilities, they would be the appropriate person to involve."
 * "I'd like to send [team member] in my place, as they're directly working on related initiatives."
 
-## "I need to focus elsewhere"
+## "I'm not attending anymore"
 
-* "I'm currently focusing on [specific priority] and need to decline meetings outside that scope."
-* "I've implemented a new meeting policy to ensure I can deliver on my key objectives. This doesn't meet my criteria for attendance."
-* "To be effective in my role, I need to be selective about which meetings I attend. I'll need to pass on this one."
-* "I'm working to reduce my meeting load by 30% this quarter to increase my team's productivity."
-* "I've set aside specific days for meetings, and unfortunately, this doesn't align with those times."
+* "I've noticed I haven't been able to contribute meaningfully to this recurring meeting. I'll step back unless specific topics arise that require my input."
+* "Could we revisit the necessity of my attendance at this standing meeting? My involvement doesn't seem essential based on recent agendas."
+* "I suggest rotating attendance from our team rather than having me join every session."
+* "Could we reduce the frequency of this meeting? Monthly would be more manageable than weekly for me."
+* "I'd like to propose moving to an exception-based model for my attendance - I'll join when there are agenda items requiring my specific input."
 
 ## "I'll help another way"
 
@@ -120,7 +112,15 @@ function parseMarkdown() {
 * "Would a quick 10-minute chat beforehand work instead of my attendance at the full meeting?"
 * "This doesn't require my real-time input. Could you send any specific questions my way after you've met?"
 
-# Prospective Vendors
+## Setting Boundaries
+
+* "I'm currently focusing on [specific priority] and need to decline meetings outside that scope."
+* "I've implemented a new meeting policy to ensure I can deliver on my key objectives. This doesn't meet my criteria for attendance."
+* "To be effective in my role, I need to be selective about which meetings I attend. I'll need to pass on this one."
+* "I'm working to reduce my meeting load by 30% this quarter to increase my team's productivity."
+* "I've set aside specific days for meetings, and unfortunately, this doesn't align with those times."
+
+# Vendor Requests
 
 ## "No"
 
@@ -135,6 +135,14 @@ function parseMarkdown() {
 * "Our team is fully committed to our existing roadmap and tools at this stage."
 * "I've consulted with our team, and we're satisfied with our current provider in this area."
 
+## "I'm delegating this"
+
+* "This would be better directed to our [department/person]. I'm copying them here so you can follow up directly."
+* "While I'm not the right contact, [colleague] manages our procurement in this area."
+* "Our company works with an approved vendor list managed by our procurement team at [email address]."
+* "We have a formal process for vendor selection. Please submit your information through our supplier portal at [website]."
+* "We're currently under contract with our existing provider, but you're welcome to register in our supplier database for future opportunities." 
+
 ## "Not now"
 
 * "We might be interested in learning more about your offering in Q3. Could you reach out again in [month]?"
@@ -142,14 +150,7 @@ function parseMarkdown() {
 * "Our review cycle for these tools begins in [month]. Please contact me then if you're still interested."
 * "I'd be interested in a brief email overview rather than a meeting at this stage."
 * "Could you send through some case studies from similar organisations first? That will help me determine if a meeting would be valuable."
-
-## "I'm delegating this"
-
-* "This would be better directed to our [department/person]. I'm copying them here so you can follow up directly."
-* "While I'm not the right contact, [colleague] manages our procurement in this area."
-* "Our company works with an approved vendor list managed by our procurement team at [email address]."
-* "We have a formal process for vendor selection. Please submit your information through our supplier portal at [website]."
-* "We're currently under contract with our existing provider, but you're welcome to register in our supplier database for future opportunities." `;
+`;
 
     const data = {};
     let currentCategory = null;
@@ -191,8 +192,8 @@ function renderCategories(data) {
     
     // CSS class names based on category (for styling)
     const cssClassMap = {
-        'Work requests': 'work-requests',
-        'Prospective Vendors': 'prospective-vendors',
+        'Work Requests': 'work-requests',
+        'Vendor Requests': 'prospective-vendors',
         'Meeting Requests': 'unnecessary-meeting-requests'
     };
     
