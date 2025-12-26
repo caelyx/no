@@ -290,3 +290,5 @@ function showQuote(quote) {
     quoteText.textContent = quote;
     quoteOverlay.classList.remove('hidden');
 }
+
+myUndefinedFunction();
